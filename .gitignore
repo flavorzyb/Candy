@@ -4,10 +4,6 @@
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
-*.pch
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -26,3 +22,10 @@
 *.exe
 *.out
 *.app
+
+## Mac OS X cache file
+.DS_Store
+*.xcworkspace
+xcuserdata
+
+build-network-Desktop_Qt_5_3_clang_64bit-Debug/

@@ -1,0 +1,3 @@
+[submodule "cocos2d-x"]
+	path = Candy/libs/cocos2d-x
+	url = git@github.com:flavorzyb/cocos2d-x.git
