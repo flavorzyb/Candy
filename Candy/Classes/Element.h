@@ -14,15 +14,25 @@ class Element : public cocos2d::CCSprite
 {
     public:
         virtual ~Element();
-        static Element * create(unsigned int color, unsigned int row, unsigned int col);
         inline unsigned int getColor() const {return m_color;}
         inline unsigned int getRow() const {return m_row;}
         inline unsigned int getCol() const {return m_col;}
+    
+    public:
+        static Element * create(unsigned int color, unsigned int row, unsigned int col);
+        static void setWidth(unsigned int width);
+        static void setHeight(unsigned int height);
+        static inline unsigned int getWidth() {return s_width;}
+        static inline unsigned int getHeight() {return s_height;}
     
     private:
         Element(unsigned int color, unsigned int row, unsigned int col);
         Element(const Element & e);
         Element & operator = (const Element & e);
+    
+    private:
+        static unsigned int s_width;
+        static unsigned int s_height;
     
     private:
         unsigned int m_color;

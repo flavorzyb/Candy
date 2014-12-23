@@ -18,6 +18,7 @@ class ElementBox : public cocos2d::CCLayer
         inline unsigned int getRows() const {return m_rows;}
         inline unsigned int getCols() const {return m_cols;}
     
+        bool initElement();
     private:
         ElementBox(unsigned int rows, unsigned int cols);
         ElementBox(const ElementBox & eb);

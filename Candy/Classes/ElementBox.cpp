@@ -7,7 +7,7 @@
 //
 
 #include "ElementBox.h"
-
+#include "Element.h"
 USING_NS_CC;
 
 const unsigned int ElementBox::DEFAULT_ROWS = 5;
@@ -36,4 +36,29 @@ ElementBox * ElementBox::create(unsigned int rows, unsigned int cols)
     delete result;
     
     return NULL;
+}
+
+bool ElementBox::initElement()
+{
+    if ((m_rows < 1) || (m_cols < 1))
+    {
+        return false;
+    }
+    
+    unsigned int w = Element::getWidth();
+    unsigned int h = Element::getHeight();
+    
+    for (int x = 0; x < m_rows; x++)
+    {
+        for (int y = 0; y < m_cols; y++)
+        {
+            Element * e = Element::create((x*m_cols + y) % 4, x, y);
+            e->setPosition(ccp(x * w, y*h));
+            addChild(e);
+        }
+    }
+    
+    setContentSize(ccp(m_rows*w, m_cols * h));
+    
+    return true;
 }
