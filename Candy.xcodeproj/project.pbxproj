@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		84858C631A4955D200805A5E /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84858C581A49557C00805A5E /* libcocos2dx.a */; };
 		84858C641A4955D200805A5E /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84858C5E1A49558D00805A5E /* libCocosDenshion.a */; };
+		84858C671A495B7000805A5E /* element_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84858C651A495B7000805A5E /* element_list.plist */; };
+		84858C681A495B7000805A5E /* element_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 84858C661A495B7000805A5E /* element_list.png */; };
 		84E80F901A4848730017A264 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E80F8F1A4848730017A264 /* QuartzCore.framework */; };
 		84E80F921A4848730017A264 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E80F911A4848730017A264 /* OpenGLES.framework */; };
 		84E80F941A4848730017A264 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E80F931A4848730017A264 /* OpenAL.framework */; };
@@ -69,6 +71,8 @@
 /* Begin PBXFileReference section */
 		84858C531A49557C00805A5E /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = "Candy/libs/cocos2d-x/cocos2dx/proj.ios/cocos2dx.xcodeproj"; sourceTree = "<group>"; };
 		84858C591A49558D00805A5E /* CocosDenshion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocosDenshion.xcodeproj; path = "Candy/libs/cocos2d-x/CocosDenshion/proj.ios/CocosDenshion.xcodeproj"; sourceTree = "<group>"; };
+		84858C651A495B7000805A5E /* element_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = element_list.plist; path = Resources/element_list.plist; sourceTree = "<group>"; };
+		84858C661A495B7000805A5E /* element_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = element_list.png; path = Resources/element_list.png; sourceTree = "<group>"; };
 		84E80F8C1A4848730017A264 /* Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E80F8F1A4848730017A264 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		84E80F911A4848730017A264 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -187,6 +191,8 @@
 		84E80FA01A4848730017A264 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84858C651A495B7000805A5E /* element_list.plist */,
+				84858C661A495B7000805A5E /* element_list.png */,
 				84E80FA11A4848730017A264 /* CloseNormal.png */,
 				84E80FA31A4848730017A264 /* CloseSelected.png */,
 				84E80FA51A4848730017A264 /* Default.png */,
@@ -319,6 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E80FB21A4848730017A264 /* Icon.png in Resources */,
+				84858C681A495B7000805A5E /* element_list.png in Resources */,
+				84858C671A495B7000805A5E /* element_list.plist in Resources */,
 				84E80FA21A4848730017A264 /* CloseNormal.png in Resources */,
 				84E80FAE1A4848730017A264 /* Icon-Small.png in Resources */,
 				84E80FAA1A4848730017A264 /* Icon-72.png in Resources */,
