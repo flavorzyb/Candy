@@ -19,6 +19,12 @@ class ElementBox : public cocos2d::CCLayer
         inline unsigned int getCols() const {return m_cols;}
     
         bool initElement();
+    
+        virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+        virtual void ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+        virtual void ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+        virtual void ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    
     private:
         ElementBox(unsigned int rows, unsigned int cols);
         ElementBox(const ElementBox & eb);
@@ -31,6 +37,7 @@ class ElementBox : public cocos2d::CCLayer
     private:
         unsigned int m_rows;
         unsigned int m_cols;
+        cocos2d::CCArray * m_elementArray;
     
 };
 #endif /* defined(__Candy__ElementBox__) */
