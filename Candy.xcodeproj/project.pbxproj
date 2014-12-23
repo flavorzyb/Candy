@@ -11,6 +11,8 @@
 		84858C641A4955D200805A5E /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84858C5E1A49558D00805A5E /* libCocosDenshion.a */; };
 		84858C671A495B7000805A5E /* element_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84858C651A495B7000805A5E /* element_list.plist */; };
 		84858C681A495B7000805A5E /* element_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 84858C661A495B7000805A5E /* element_list.png */; };
+		84858C6B1A495E0D00805A5E /* ElementBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84858C691A495E0D00805A5E /* ElementBox.cpp */; };
+		84858C6E1A49622800805A5E /* Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84858C6C1A49622800805A5E /* Element.cpp */; };
 		84E80F901A4848730017A264 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E80F8F1A4848730017A264 /* QuartzCore.framework */; };
 		84E80F921A4848730017A264 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E80F911A4848730017A264 /* OpenGLES.framework */; };
 		84E80F941A4848730017A264 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E80F931A4848730017A264 /* OpenAL.framework */; };
@@ -73,6 +75,10 @@
 		84858C591A49558D00805A5E /* CocosDenshion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocosDenshion.xcodeproj; path = "Candy/libs/cocos2d-x/CocosDenshion/proj.ios/CocosDenshion.xcodeproj"; sourceTree = "<group>"; };
 		84858C651A495B7000805A5E /* element_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = element_list.plist; path = Resources/element_list.plist; sourceTree = "<group>"; };
 		84858C661A495B7000805A5E /* element_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = element_list.png; path = Resources/element_list.png; sourceTree = "<group>"; };
+		84858C691A495E0D00805A5E /* ElementBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ElementBox.cpp; path = Classes/ElementBox.cpp; sourceTree = "<group>"; };
+		84858C6A1A495E0D00805A5E /* ElementBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElementBox.h; path = Classes/ElementBox.h; sourceTree = "<group>"; };
+		84858C6C1A49622800805A5E /* Element.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Element.cpp; path = Classes/Element.cpp; sourceTree = "<group>"; };
+		84858C6D1A49622800805A5E /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Element.h; path = Classes/Element.h; sourceTree = "<group>"; };
 		84E80F8C1A4848730017A264 /* Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E80F8F1A4848730017A264 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		84E80F911A4848730017A264 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -236,6 +242,10 @@
 				84E813321A4848760017A264 /* AppDelegate.cpp */,
 				84E813341A4848760017A264 /* HelloWorldScene.h */,
 				84E813351A4848760017A264 /* HelloWorldScene.cpp */,
+				84858C691A495E0D00805A5E /* ElementBox.cpp */,
+				84858C6A1A495E0D00805A5E /* ElementBox.h */,
+				84858C6C1A49622800805A5E /* Element.cpp */,
+				84858C6D1A49622800805A5E /* Element.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -347,8 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84858C6B1A495E0D00805A5E /* ElementBox.cpp in Sources */,
 				84E80FBE1A4848730017A264 /* RootViewController.mm in Sources */,
 				84E80FC01A4848730017A264 /* main.m in Sources */,
+				84858C6E1A49622800805A5E /* Element.cpp in Sources */,
 				84E80FBB1A4848730017A264 /* AppController.mm in Sources */,
 				84E813361A4848760017A264 /* HelloWorldScene.cpp in Sources */,
 				84E813331A4848760017A264 /* AppDelegate.cpp in Sources */,
